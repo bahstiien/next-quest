@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Layout from "../components/layout";
 // import { useEffect } from "react";
 
 export default function IndexPage() {
@@ -6,11 +7,10 @@ export default function IndexPage() {
   //   console.log("index page did mounted");
   // }, []);
   return (
-    <div>
-      <Link href="/"> Home </Link>
-      <Link href="/about"> About </Link>
-      <Link href="/terms"> Terms </Link>
-      <h1> Welcome in Next App </h1>
-    </div>
+    <Layout>
+      <div>
+        <h1> Welcome in Next App </h1>
+      </div>
+    </Layout>
   );
 }

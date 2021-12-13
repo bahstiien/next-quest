@@ -1,16 +1,16 @@
 import Link from "next/link";
+import Layout from "../components/layout";
+import Image from "next/image";
+import lab from "../public/images/lab.jpg";
 
 export default function about() {
   return (
-    <div>
-      <Link href="/"> Home </Link>
-      <Link href="/about"> About </Link>
-      <Link href="/terms"> Terms </Link>
-      <h2> About </h2>
-
+    <Layout titlePage="About me">
       <p>
         Logoden. Va. Mor. Jiletenn. Am. Tog. Bered. Garantez. Tavarnour. Klask.{" "}
       </p>
-    </div>
+
+      <Image src={lab} layout="responsive" />
+    </Layout>
   );
 }
