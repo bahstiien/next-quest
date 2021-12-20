@@ -9,9 +9,7 @@ export default function ArticleDetailPage({ title, body, pictureUrl }) {
   return (
     <Layout>
       <>
-        <Link href="/articles">
-          <a href="/articles">retour</a>
-        </Link>
+        <Link href="/articles">Back </Link>
         <h1>{title}</h1>
         <Image
           alt="Picture representing the content of the article. Or not."
@@ -43,5 +41,6 @@ export async function getStaticProps({ params }) {
       body,
       pictureUrl,
     },
+    revalidate: 2,
   };
 }

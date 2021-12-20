@@ -22,5 +22,6 @@ export async function getStaticProps() {
       campuses,
       lastUpdateDate: currentDate,
     },
+    revalidate: 10,
   };
 }
